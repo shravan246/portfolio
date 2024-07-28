@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(90, 75, 177);
+            color: white;
+            font-family: "Ga Maamli", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            height: 10px;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+
+            background-color: rgb(110, 99, 174);
+            height: 70px;
+            align-items: center;
+
+
+        }
+
+        nav ul {
+            /* align-items: center; */
+            justify-content: center;
+            display: flex;
+
+        }
+
+        nav li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav li a:hover {
+            /* text-decoration: none; */
+            color: rgb(23, 16, 59);
+            font-size: 1.03rem;
+        }
+
+        .left {
+            font-size: 1.4rem;
+            color: darkblue;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 80px 0;
+            align-items: center;
+
+        }
+
+        .firstSection>div {
+            width: 38%;
+
+        }
+
+        .leftSection {
+
+            font-size: 3rem;
+
+
+
+        }
+
+        .rightSection img {
+            width: 90%;
+
+        }
+
+        .fr {
+            color: darkblue;
+        }
+
+        #element {
+            color: rgb(3, 3, 72);
+
+        }
+
+        #sect {
+            display: flex;
+            justify-content: center;
+            font-size: 1.9rem;
+            padding: 34px 0;
+            margin: 144px 0px;
+            height: 34%;
+            background-color: mediumslateblue;
+
+
+
+
+        }
+
+        #element1 {
+            font-size: 4.999rem;
+            margin: 23px;
+            justify-content: center;
+            color: rgb(83, 7, 7);
+            transition: all 5ms ease-in-out;
+
+        }
+
+        #element1:hover {
+            transform: translate(42px);
+        }
+
+        @keyframes element1 {
+            0% {
+                left: 234px;
+                right: 0px;
+            }
+
+            30% {
+                left: auto;
+                bottom: auto;
+            }
+        }
+
+        #sde {
+            padding: 54px;
+            opacity: 20%;
+            color: aqua;
+        }
+
+        #res {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 55%;
+            padding-top: 23px 0px;
+            margin: 201px;
+            background-color: rgb(139, 115, 162);
+        }
+
+        .btn {
+            padding: 24px 10px;
+            margin: 24px 0;
+            background-color: coral;
+            font-size: 1.2rem;
+            border-radius: 45px;
+            border: 2px black solid;
+            cursor: pointer;
+
+        }
+
+        .btn:hover {
+            background-color: transparent;
+        }
+
+    #co {
+            display: flex;
+            justify-content: space-between;
+            color: rgb(20, 235, 224);
+            padding: 70px 18px;
+            margin: 60px 0px;
+            font-size: 1.45rem;
+            cursor: pointer;
+
+           
+
+        }
+        .con{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .con:hover{
+            color: rgb(1, 23, 21);
+            
+        }
+        .em{
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+        #ti{
+            margin-left: 34%;
+            padding-top: 12px;
+            color: black;
+        }
+
+
+
+        footer {
+            align-items: center;
+            justify-content: center;
+
+
+            display: flex;
+            background-color: slateblue;
+            height: 49px;
+            flex-direction: column;
+            margin: 50px 0px;
+
+        }
+
+        .fot {
+
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+
+        }
+        @media (max-width:300px) {
+            .left{
+                display: block;
+            }
+        }
+        @media(min-width:300px) and (max-width:600px){
+            .right{
+                display: block;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Shravan yadav</div>
+            <div class="right">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#sect" target="_blank">About</a></li>
+                    <li><a href="#res" target="_blank">Resume</a></li>
+                    <li><a href="#co" target="_blank">Conatct Us</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="ti"> Local time: <span id="time"></span></div>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi,My Name is <Span class="fr">Shravan Yadav,</Span>
+                <div> I am a Student of Bsc.IT</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection"><img src="w2.jpg" alt=""></div>
+        </section>
+        <section id="sect">
+            <div>Working Experience</div>
+
+            <hr>
+            <div id="element1">Fresher</div>
+            <div id="sde">
+                I do not have experience in opening an IT company but I am willing to learn and have the ability to do
+                the work.
+            </div>
+
+        </section>
+        <section id="res">
+            <a href="resume.docx"><button class="btn" value="">Download Resume</button></a>
+
+
+        </section>
+        <section id="co">
+            <div class="con">
+                <img src="icons8-address.gif" alt="">
+                address:Mumbai,maharashtra.
+                <div class="em">
+                    <img src="icons8-gmail-logo.gif" alt="">
+                    email:shravan24712@gmail.com
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </section>
+
+
+    </main>
+
+
+    <footer>
+        <div>
+            Portfolio
+        </div>
+        <div class="fot">
+            &copy;copyright | |All Right Reserved.by Shravan.
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Designer.', 'And Tech Learner.'],
+            typeSpeed: 20,
+
+
+        });
+
+        function dispalyYime() {
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+
+        }
+        setInterval(dispalyYime, 1000);
+
+
+
+    </script>
+</body>
+
+</html>
